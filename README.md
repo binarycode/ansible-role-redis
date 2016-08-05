@@ -21,6 +21,10 @@ Port and interface on which Redis will listen. Set the interface to `0.0.0.0` to
 
 If set, Redis will also listen on a local Unix socket.
 
+    redis_unixsocketperm: 700
+
+Specify Unix socket permissions.
+
     redis_timeout: 300
 
 Close a connection after a client is idle `N` seconds. Set to `0` to disable timeout.
